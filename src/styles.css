@@ -1,6 +1,6 @@
 html {
-  background: url('./assets/pumpkin_patch.jpg') no-repeat center center fixed;
-  background: url('https://github.com/adrietripp/js-dev-final-capstone-starter-whack-a-mole/blob/main/assets/pumpkin_patch.jpg') no-repeat center center fixed;
+  background: url('./assets/graveyard.png') no-repeat center center fixed;
+  background: url('https://github.com/adrietripp/js-dev-final-capstone-starter-whack-a-mole/edit/main/src/styles.css#:~:text=dirt.png-,graveyard,-.png') no-repeat center center fixed;
   box-sizing: border-box;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -40,7 +40,8 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  cursor: url('./assets/mallet.png'), pointer;
+  cursor: url('./assets/axenew.png'), pointer;
+  cursor: url('https://github.com/adrietripp/js-dev-final-capstone-starter-whack-a-mole/edit/main/src/styles.css#:~:text=axenew.-,png,-background.png'), pointer;
 }
 
 .hole {
@@ -64,8 +65,8 @@ h2 {
 }
 
 .mole {
-  background:url('./assets/mole.png') bottom center no-repeat;
-  background:url('https://github.com/Thinkful-Ed/js-dev-final-capstone-starter/blob/main/assets/mole.png?raw=true') bottom center no-repeat;
+  background:url('./assets/skeleton.png') bottom center no-repeat;
+  background:url('https://github.com/adrietripp/js-dev-final-capstone-starter-whack-a-mole/edit/main/src/styles.css#:~:text=pumpkin_patch.jpg-,skeleton,-.png') bottom center no-repeat;
   background-size: 40%;
   position: absolute;
   top: 100%;
