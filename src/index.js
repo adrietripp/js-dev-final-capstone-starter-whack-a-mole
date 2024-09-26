@@ -11,7 +11,23 @@ let lastHole = 0;
 let points = 0;
 let difficulty = "hard";
 
-
+const backgroundMusic = new Audio("https://github.com/adrietripp/js-dev-final-capstone-starter-whack-a-mole/blob/main/assets/hween.mp3?raw=true");
+function playAudio(audioObject) {
+  audioObject.play();
+}
+function loopAudio(audioObject) {
+  audioObject.loop = true;
+  playAudio(audioObject);
+}
+function stopAudio(audioObject) {
+  audioObject.pause();
+}
+function play(){
+  playAudio(song);
+}
+document.addEventListener("DOMContentLoaded", function() {
+  loopAudio(backgroundMusic);
+});
 /**
  * Generates a random integer within a range.
  *
@@ -287,25 +303,6 @@ function startGame() {
 }
 
 startButton.addEventListener("click", startGame);
-
-const backgroundMusic = new Audio("https://github.com/adrietripp/js-dev-final-capstone-starter-whack-a-mole/blob/main/assets/hween.mp3?raw=true");
-function playAudio(audioObject) {
-  audioObject.play();
-}
-function loopAudio(audioObject) {
-  audioObject.loop = true;
-  playAudio(audioObject);
-}
-function stopAudio(audioObject) {
-  audioObject.pause();
-}
-function play(){
-  playAudio(song);
-}
-// Automatically start playing background music on loop when the website loads
-document.addEventListener("DOMContentLoaded", function() {
-  loopAudio(backgroundMusic);
-}); 
 
 
 
