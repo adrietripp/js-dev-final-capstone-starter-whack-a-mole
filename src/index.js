@@ -25,9 +25,7 @@ function stopAudio(audioObject) {
 function play(){
   playAudio(song);
 }
-document.addEventListener("DOMContentLoaded", function() {
-  loopAudio(backgroundMusic);
-});
+
 /**
  * Generates a random integer within a range.
  *
@@ -299,7 +297,8 @@ function startGame() {
   clearScore();
   startTimer();
   showUp();
-  return "game started";
+  loopAudio(backgroundMusic);
+ return "game started";
 }
 
 startButton.addEventListener("click", startGame);
