@@ -287,7 +287,8 @@ function startGame() {
 }
 
 startButton.addEventListener("click", startGame);
-const backgroundMusic = new Audio('assets/hween.mp3');
+
+const backgroundMusic = new Audio("https://github.com/adrietripp/js-dev-final-capstone-starter-whack-a-mole/blob/main/assets/hween.mp3?raw=true");
 backgroundMusic.loop = true; 
 backgroundMusic.volume = 1 ; 
 backgroundMusic.play();
